@@ -24,10 +24,11 @@ def make_predictions(data, model):
 
 def generate_predictions(test_df):
     model_pickle_path = "./churn_prediction_model.pkl"
-    label_encoder_pickle_path = "./churn_prediction_label_encoders.pkl"
+    model_pickle_path = "./churn_prediction_model.pkl"
+    # label_encoder_pickle_path = "./churn_prediction_label_encoders.pkl"
 
-    model, label_encoder_dict = load_pickles(model_pickle_path,
-                                             label_encoder_pickle_path)
+    model = load_pickles(model_pickle_path)
+    #label_encoder_dict = load_pickles(label_encoder_pickle_path)
     # processed_df = pre_process_data(test_df, label_encoder_dict)
     prediction = make_predictions(test_df, model)
     return prediction
