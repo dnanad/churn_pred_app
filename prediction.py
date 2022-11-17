@@ -24,7 +24,6 @@ def make_predictions(data, model):
 
 def generate_predictions(test_df):
     model_pickle_path = "./churn_prediction_model.pkl"
-    model_pickle_path = "./churn_prediction_model.pkl"
     # label_encoder_pickle_path = "./churn_prediction_label_encoders.pkl"
 
     model = load_pickles(model_pickle_path)
