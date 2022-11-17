@@ -6,14 +6,15 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LogisticRegression
 
 
-def load_pickles(model_pickle_path, label_encoder_pickle_path):
+def load_pickles(model_pickle_path):
     model_pickle_opener = open(model_pickle_path, "rb")
     model = pickle.load(model_pickle_opener)
 
-    label_encoder_opener = open(label_encoder_pickle_path, "rb")
-    label_encoder_dict = pickle.load(label_encoder_opener)
+    # label_encoder_opener = open(label_encoder_pickle_path, "rb")
+    # label_encoder_dict = pickle.load(label_encoder_opener)
 
-    return model, label_encoder_dict
+    return model
+    # , label_encoder_dict
 
 
 def make_predictions(data, model):
