@@ -8,8 +8,10 @@ pandas = "*"
 sklearn = "*"
 scikit-learn = "*"
 matplotlib = "*"
+streamlit = "*"
 
 [dev-packages]
+ipykernel = "*"
 
 [requires]
 python_version = "3.9"
