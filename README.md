@@ -4,4 +4,4 @@ This is an example application to predict customer churn at a telecommunications
 
 The application is deployed on [streamlit](https://streamlit.io/).
 
-You can click [here](https://dnanad-churn-pred-app-prediction-hj6v40.streamlit.app/) to chekc the app!
+You can click [here](https://dnanad-churn-pred-app-prediction.streamlit.app) to chekc the app!
